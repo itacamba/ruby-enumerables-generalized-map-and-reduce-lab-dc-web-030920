@@ -11,7 +11,7 @@ def map(array)
 end
 
 def reduce(array, starting_point = nil)
-if !!starting_point
+if starting_point
   total = starting_point
   index = 1
 else
