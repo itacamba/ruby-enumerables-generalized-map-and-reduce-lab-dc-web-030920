@@ -13,9 +13,10 @@ end
 def reduce(array, starting_point = nil)
 if !!starting_point
   total = starting_point
+  index = 0
 else
   total = 0
-  index = 0 
+  index = 0
 end
 while index < array.length do
   total = yield(total + array[index])
