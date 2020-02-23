@@ -10,12 +10,12 @@ def map(array)
   new
 end
 
-def reduce(array, starting_point = nil)
+def reduce(array, starting_point=nil)
 if starting_point
   total = starting_point
   index = 1
 else
-  total = array[index]
+  total = array[0]
   index = 1
 end
 while index < array.length do
