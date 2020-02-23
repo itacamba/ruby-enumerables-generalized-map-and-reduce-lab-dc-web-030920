@@ -10,9 +10,12 @@ def map(array)
   new
 end
 
-def reduce(array, starting_point = 0)
-index = 0
-total = starting_point
+def reduce(array, starting_point = nil)
+if !!starting_point
+  total = starting_point
+else
+  total = 0 
+end
 while index < array.length do
   total = yield(total + array[index])
   index += 1
