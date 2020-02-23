@@ -15,8 +15,8 @@ if !!starting_point
   total = starting_point
   index = 1
 else
-  total = 0
-  index = 0
+  total = array[index]
+  index = 1
 end
 while index < array.length do
   total = yield(total + array[index])
